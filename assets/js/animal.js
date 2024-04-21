@@ -7,36 +7,34 @@ export default class Animal {
         this._sonido = sonido;
     }
 
-    get nombre() {
+    get Nombre() {
         return this._nombre;
     }
 
-    get edad() {
+    get Edad() {
         return this._this._edad;
     }
-    get img() {
+    get Img() {
         return this._img;
 
     }
-    get comentarios() {
+    get Comentarios() {
         return this._comentarios;
     }
-    get sonido() {
+    get Sonido() {
         return this._sonido;
     }
     set Comentarios(nuevoComentario) {
-        this.Comentarios = nuevoComentario;
+        this._Comentarios = nuevoComentario;
     }
-// revissar carpeta pregunta 
+    
 
-let animales = () => {
+        let Animales = () => {
     const url = "http://127.0.0.1:5501/animales.json";
-    const getDatos = async (){
-        let respuesta = await fetch(url);;
-        let { animales } = await respuesta.json()
-        return animales;
-    }
-    return { getDatos };
-    ();
+    const getDatos = async()
+    let respuesta = await fetch(url);
+    let { animales } = await respuesta.json()
+    return animales;
 }
- 
+return { getDatos };
+
