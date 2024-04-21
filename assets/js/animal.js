@@ -24,6 +24,19 @@ export default class Animal {
     get sonido() {
         return this._sonido;
     }
+    set Comentarios(nuevoComentario) {
+        this.Comentarios = nuevoComentario;
+    }
+// revissar carpeta pregunta 
 
+let animales = () => {
+    const url = "http://127.0.0.1:5501/animales.json";
+    const getDatos = async (){
+        let respuesta = await fetch(url);;
+        let { animales } = await respuesta.json()
+        return animales;
+    }
+    return { getDatos };
+    ();
 }
-
+ 

@@ -1,4 +1,5 @@
 import Animal from `./Animal.js`
+
 class Leon extends Animal {
     constructor(nombre, edad, img, comentarios, sonido) {
         super(nombre, edad, img, comentarios, sonido);
@@ -7,15 +8,7 @@ class Leon extends Animal {
         //reproducir sonido del leon 
     }
 }
-class lobo extends Animal {class Leon extends Animal {
-    constructor(nombre, edad, img, comentarios, sonido) {
-        super(nombre, edad, img, comentarios, sonido);
-    }
-    Rugir() {
-        //reproducir sonido del leon 
-    }
-}
-class lobo extends Animal {
+class Lobo extends Animal {
     constructor(nombre, edad, img, comentarios, sonido) {
         super(nombre, edad, img, comentarios, sonido);
     }
@@ -23,11 +16,12 @@ class lobo extends Animal {
         //reproducir sonido del lobo
     }
 }
+
 class Oso extends Animal {
     constructor(nombre, edad, img, comentarios, sonido) {
         super(nombre, edad, img, comentarios, sonido);
     }
-    Gruñir() {
+    Grunir() {
         //reproducir sonido del Oso 
     }
 }
@@ -47,4 +41,4 @@ class Aguila extends Animal {
         //reproducir sonido del Aguila 
     }
 }
-export { Leon, lobo, Oso, Serpiente, Aguila };
+export { Leon, Lobo, Oso, Serpiente, Aguila };
